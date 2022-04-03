@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+    <title>Ubicacion</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/style-geo.css'>
+	
+	
+    <script src='js/index-geo.js'></script>
+	<script
+	src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/js1.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+</head>
+<body>
+<div id="wrapper">
+	<section>
+		<header id="#header">
+			<a href="#" id="menu_on">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			
+		</header>
+		<nav>	
+			<ul>
+				<a href="index.html" class="logo">
+				<img src="src/b1.png" alt="Bloggit" width="500" height="600">
+				</a>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="Geo.html">Ubicaci&oacute;n</a></li>
+				<li><a href="feedback.html#">Contacto</a></li>
+				<li><a href="tabla2.html">Tabla</a></li>
+				<li><a href="login.html">Cerrar Sesi&oacute;n</a></li>
+				
+			</ul>
+		</nav>
+	</section>
+	<section id="content">
+			
+			<div class="contain">
+        <button class="button" onclick="getLocation()">Averigua tu localización</button>
+        <div class="cordinates">
+            
+            <p id="location" style="text-align: center;"></p>
+        </div>
+        <div class="img-map">
+            <img class="map"src="src/Ubicacion.png">
+        </div>
+        <footer style="text-align: center;">
+            <p>Calle: Ricardo Ferretti</p>
+            <p>#3867</p>
+            <p>Monterrey, Nuevo León</p>
+        </footer>
+    </div>
+			
+	</section>
+</div>
+
+
+
+</body>
+</html>

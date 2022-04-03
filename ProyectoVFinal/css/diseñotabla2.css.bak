@@ -1,0 +1,184 @@
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}
+@import url('https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+	 font-family: 'Raleway', sans-serif;
+	 background:#000000
+}
+
+
+header{
+	display:inline-block;
+	background: #323232;
+	position: fixed;
+	width: 100%;
+	padding: 15px;
+	z-index: 2;
+	
+}
+
+#menu_on{
+	display: block;
+	width:30px;
+	height: 20px;
+	position: relative;
+	z-index: 2;
+}
+
+#menu_on span{
+	width: 100%;
+	height: 4px;
+	border-radius: 4px;
+	display: block;
+	position: absolute;
+	background: #fff;
+	transition: all 0.25s ease;
+	transform-origin : 0px 100%;
+}
+
+#menu_on span:nth-child(2){
+	top: calc(50% - 2px);
+}
+
+#menu_on span:nth-child(3){
+bottom: 0;
+}	
+	.visible_menu span:nth-child(1){
+		transform: rotate(45deg) translate(-2px,1px); 
+	}
+
+	.visible_menu span:nth-child(2){
+		opacity: 0;
+	}
+
+
+	.visible_menu span:nth-child(3){
+		transform: rotate(-45deg) translate(-3px,3px); 
+	}
+
+nav{
+	
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left:-300px;
+	width: 300px;
+	z-index: 1;
+	padding: 90px 30px 30px;
+	background: #4C4B4B;
+	opacity: 0;
+	transition: all 0.75s ease;
+	font-size: 1.2em;
+	overflow-y: auto;
+}
+
+.visible_menu{
+	position: fixed;
+}
+
+.visible_menu nav{
+	left: 0;
+	opacity: 1;
+}
+
+nav a{
+	display:inline-block;
+	text-decoration: none;
+	padding: 10px;
+	color: rgba(255,255,255,0.75);
+	border-bottom: 1px solid rgba(255,255,255,0.2);
+	transition: all ease 0.25s;
+}
+
+nav a:hover{
+	color: rgba(255,255,255,1);
+	border-bottom-color:rgba(255,255,255,0.4);
+}
+
+#content{
+	padding:250px 8%;
+	
+	text-align: left;
+	height: 100vh;
+	position: relative;
+	display: table;
+	width: 100%;
+	transition: all 0.75s ease;
+
+}
+
+
+.visible_menu #content{
+transform: translateX(260px);
+}
+
+.logo{
+	margin-bottom: 0px;
+	text-align:center;
+}
+
+.logo img{
+  display: block;
+  width: 90%;
+  height: auto;
+}
+
+h2 {font-size:36px;margin:0 0 10px 0}
+	p {color:#fff;margin:0 0 10px 0;text-align:center;font-family: 'Raleway', sans-serif;font-size: 200%}
+	
+	table.width200,table.rwd_auto {border: solid #4d4d4d 1px;margin:0 0 50px 0;font-family: 'Raleway', sans-serif;-moz-border-radius: 10px;
+	-webkit-border-radius: 10px; border-radius: 10px}
+		.width200 th,.rwd_auto th {background:#000000;padding:5px}
+		.width200 td,.rwd_auto td {background:#000000;border-bottom:0px solid #252525;padding:5px}
+		.width200 tr:last-child td, .rwd_auto tr:last-child td{border:0}
+		
+	.rwd {width:100%;overflow:auto;}
+		.rwd table.rwd_auto {width:auto;min-width:100%}
+			.rwd_auto th,.rwd_auto td {white-space: nowrap;}
+			
+	@media only screen and (max-width: 760px), (min-width: 768px) and (max-width: 1024px)  
+	{
+	
+		table.width200, .width200 thead, .width200 tbody, .width200 th, .width200 td, .width200 tr { display: block; }
+		
+		.width200 thead tr { position: absolute;top: -9999px;left: -9999px; }
+		
+		.width200 tr { border: 1px solid #252525; }
+		
+		.width200 td { border: none;border-bottom: 1px solid #252525; position: relative;padding-left: 50%;text-align:left }
+		
+		.width200 td:before {  position: absolute; top: 6px; left: 6px; width: 45%; padding-right: 10px; white-space: nowrap;}
+		
+		.width200 tr:nth-of-type(1):before { content: "Killer99"; }
+		
+		
+		.descarto {display:none;}
+		.fontsize {font-size:10px}
+	}
+	
+	/* Smartphones (portrait and landscape) ----------- */
+	@media only screen and (min-width : 320px) and (max-width : 480px) 
+	{
+		body { width: 320px; }
+		.descarto {display:none;}
+	}
+	
+	/* iPads (portrait and landscape) ----------- */
+	@media only screen and (min-width: 768px) and (max-width: 1024px) 
+	{
+		body { width: 495px; }
+		.descarto {display:none;}
+		.fontsize {font-size:10px}
+	}
+	
+	th{
+	color:#fff;
+	}
+	td{
+	color:#fff;
+	}
+	table:hover td{background:#1a1a1a}

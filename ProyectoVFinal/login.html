@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesion</title>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/login.css'>
+    <script src='js/login.js'></script>
+</head>
+<body>
+    <div class="logcontainer">
+        <img class="logo" src="src/logo.PNG" alt="logo">
+        <form>
+            <div class="row">
+                <div class="label">
+                    <label for="username">Usuario:</label>
+                </div>
+                <div class="input">
+                    <input type="text" id="username" name="username" placeholder="Ingresa usuario" required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="password">Contrase&ntilde;a:</label>
+                </div>
+                <div class="input">
+                    <input type="password" id="password" name="password" placeholder="Ingresa contraseña" required>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <input type="submit" value="Iniciar sesion" id="iniciar-sesion" onclick="login()">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

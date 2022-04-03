@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Envianos un mensaje</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='css/feedback-design.css'>
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	
+	<script
+	src="http://code.jquery.com/jquery-3.2.1.slim.min.js"
+	integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+	crossorigin="anonymous"></script>
+	<script type="text/javascript" src="js/js1.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	
+</head>
+<body>
+    
+	<div id="wrapper">
+	<section>
+		<header id="#header">
+			<a href="#" id="menu_on">
+				<span></span>
+				<span></span>
+				<span></span>
+			</a>
+			
+		</header>
+		<nav>	
+			<ul>
+				<a href="index.html" class="logo">
+				<img src="src/b1.png" alt="Bloggit" width="500" height="600">
+				</a>
+				<li><a href="index.html">Inicio</a></li>
+				<li><a href="Geo.html">Ubicaci&oacute;n</a></li>
+				<li><a href="feedback.html#">Contacto</a></li>
+				<li><a href="tabla2.html">Tabla</a></li>
+				<li><a href="login.html">Cerrar Sesi&oacute;n</a></li>
+				
+			</ul>
+		</nav>
+	</section>
+	<section id="content">
+			
+			<div class="container">
+        
+        <form class="feedback" name="form-feedback">
+            <div class="row">
+                <h1>Ingrese aqui su comentario</h1>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="nombre">Nombre: </label>
+                </div>
+                <div class="input">
+                    <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre" required minlength="4">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="usuario">Usuario: </label>
+                </div>
+                <div class="input">
+                    <input type="text" id="usuario" name="usuario" placeholder="Ingrese su usuario" required minlength="8">
+                </div>
+            </div>
+            <div class="row">
+                <div class="label">
+                    <label for="comentario">Comentario: </label>
+                </div>
+                <div class="textarea">
+                    <textarea id="comentario" name="comentario" rows="3" cols="50"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <input  type="submit" value="¡Envia tu comentario!" id="submit-feedback">
+            </div>
+            <div class="row">
+                <p>Contacto: comentarios@bloggit.com</p>
+                <p>Telefono: 81 8240 8849</p>
+            </div>
+        </form>
+    </div>
+    <script src='js/feedback-script.js'></script>
+			
+	</section>
+</div>
+
+	
+</body>
+</html>
